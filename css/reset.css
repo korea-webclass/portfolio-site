@@ -42,7 +42,15 @@ caption {
 button {
     background: none;
     cursor: pointer;
+    background: 0;
+    border: 0;
+    outline: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
+
 /* a 링크 초기화 */
 a {
     color: #000;

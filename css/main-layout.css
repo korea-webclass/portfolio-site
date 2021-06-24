@@ -5,7 +5,12 @@ body {
 }
 
 .header {
-    background-color: #000;
+    /* background-color: transparent; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header-contents {
@@ -15,21 +20,29 @@ body {
     padding: 0 40px;
 }
 
+.header-logo {
+    /* position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 100; */
+}
+
+
 .header-logo a {
     display: block;
 }
 
 .header-logo img {
-    width: 80px;
+    width: 120px;
     vertical-align: top;
+    /* filter: invert(100%); */
 }
+
 .header .btn-menu {
-    /* width: 48px; */
-    /* height: 48px; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* right: 40px; */
-    /* padding: 10px; */
+    /* position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 100; */
 }
 .header .btn {
     /* position: absolute; */
@@ -51,7 +64,28 @@ body {
     margin-bottom: 0;
 }
 
+.main {
+    padding-top: 120px;
+}
+.main .contents {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.main .portfolio-title p {
+    width: 100%;
+    max-width: 912px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.main .portfolio {
+    margin-top: 120px;
+}
 .main .portfolio-list::after {
     content: '';
     display: block;
@@ -60,10 +94,14 @@ body {
 
 .main .portfolio-list li {
     /* width: 33.3%; */
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     float: left;
     position: relative;
     /* box-shadow: inset 0 0 0 25px #53a7ea; */
+}
+
+.main .portfolio-list li:nth-child(2n) {
+    margin-top: 80px;
 }
 
 .main .portfolio-list a {
@@ -84,12 +122,12 @@ body {
 
 .main .portfolio-list .txt {
     /* opacity: 0; */
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; */
 }
 
 /* .main .portfolio-list li:hover .txt {
@@ -97,13 +135,18 @@ body {
 } */
 
 .main .portfolio-list .txt b {
+    font-size: 24px;
+    font-weight: 400;
     /* font-size: 48px; */
-    font-size: 2.5vw;
+    /* font-size: 2.5vw; */
+    color: #fff;
 }
 
 .main .portfolio-list .txt p {
+    font-size: 16px;
     /* font-size: 24px; */
-    font-size: 1.25vw;
+    /* font-size: 1.25vw; */
+    color: #fff;
 }
 
 .footer {

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/main-layout.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>포트폴리오 사이트</title>
 </head>
 <body>
@@ -39,7 +40,7 @@
         <section class="portfolio">
           <h2 class="blind">포트폴리오 작업물</h2>
           <div class="portfolio-list_area">
-            <ul class="portfolio-list">
+            <ul class="portfolio-list" data-aos="fade-up" data-aos-duration="3000">
               <li>
                 <a href="https://korea-webclass.github.io/displayad-naver/" target="_blank">
                   <img src="../image/contents001.jpg" alt="">
@@ -87,5 +88,9 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
